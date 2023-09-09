@@ -32,7 +32,7 @@ export function Header() {
       {/* A container for the header with some classes */}
       <div className='container text-lg flex justify-between items-center text-white h-[50px] max-w-[1240px] m-auto px-2'>
         {/* The logo */}
-        <a href='/' >React Shop</a>
+        <a href='/' >UrbSty</a>
         
         {/* The search input */}
         <Search />
