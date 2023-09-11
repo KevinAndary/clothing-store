@@ -38,11 +38,9 @@ export function Header() {
             style={{
                 fontSize: '24px',
                 fontWeight: 'bold',
-                fontFamily: 'Lobster, cursive',
-                background: 'linear-gradient(to right, #ff6b6b, #ffa86b)', // Colorful gradient background
+                fontFamily: 'Lobster, cursive',     
                 WebkitBackgroundClip: 'text', // Clip text to background
                 color: 'transparent', // Hide text color
-                transition: '0.3s ease-in-out', // Smooth transition for hover effect
             }}
             onMouseOver={(e) => {
                 e.target.style.background = 'linear-gradient(to right, #ffa86b, #ff6b6b)'; // Change background on hover
