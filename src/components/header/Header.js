@@ -20,35 +20,35 @@ export function Header() {
 
   return (
     // The header element with some classes
-    <header className='w-screen bg-[#221f1f] fixed z-10 top-0 h-[50px]'>
-      {/* A container for the header with some classes */}
-      <div className='container text-lg flex justify-between items-center text-white h-[50px] max-w-[1240px] m-auto px-2'>
-        {/* The logo */}
-        <a href='/' >UrbSty</a>
-        {/* The search input */}
-        <Search />
-        {/* A list of buttons */}
-        <ul className='flex justify-between'>
-          {/* The search button */}
-          <button className='block md:hidden mr-2 px-[8px]' onClick={toggleSearch}>
-            <FontAwesomeIcon icon={faSearch} />
-          </button>
+    // <header className='w-screen bg-[#221f1f] fixed z-10 top-0 h-[50px]'>
+    //   {/* A container for the header with some classes */}
+    //   <div className='container text-lg flex justify-between items-center text-white h-[50px] max-w-[1240px] m-auto px-2'>
+    //     {/* The logo */}
+    //     <a href='/' >UrbSty</a>
+    //     {/* The search input */}
+    //     <Search />
+    //     {/* A list of buttons */}
+    //     <ul className='flex justify-between'>
+    //       {/* The search button */}
+    //       <button className='block md:hidden mr-2 px-[8px]' onClick={toggleSearch}>
+    //         <FontAwesomeIcon icon={faSearch} />
+    //       </button>
           
-          {/* The user button */}
-          <li className='mr-2 px-[8px] py-1 rounded hover:bg-gray-600 transition cursor-not-allowed md:mr-4'>
-            <FontAwesomeIcon icon={faUser} className='text-xl'/>
-          </li>
+    //       {/* The user button */}
+    //       <li className='mr-2 px-[8px] py-1 rounded hover:bg-gray-600 transition cursor-not-allowed md:mr-4'>
+    //         <FontAwesomeIcon icon={faUser} className='text-xl'/>
+    //       </li>
           
-          {/* The cart button */}
-          <button className='px-[6px] py-1 rounded hover:bg-gray-600 transition relative' onClick={toggleCart}>
-            <FontAwesomeIcon icon={faCartShopping} className='text-xl'/>
-            {/* Show the number of items in the cart */}
-            {cart.length > 0 && <span className='absolute right-[-7px] top-0 bg-[#00a046] text-[12px] h-[10px] flex items-center justify-center px-[7px] py-[10px] rounded-full'>{cart.length}</span>}
-          </button>
-        </ul>
-      </div> {/* Close the div containing the header content */}
-      {/* The cart overlay */}
-      {btnCart && <CartShopping cart={cart}/>}
-    </header>
+    //       {/* The cart button */}
+    //       <button className='px-[6px] py-1 rounded hover:bg-gray-600 transition relative' onClick={toggleCart}>
+    //         <FontAwesomeIcon icon={faCartShopping} className='text-xl'/>
+    //         {/* Show the number of items in the cart */}
+    //         {cart.length > 0 && <span className='absolute right-[-7px] top-0 bg-[#00a046] text-[12px] h-[10px] flex items-center justify-center px-[7px] py-[10px] rounded-full'>{cart.length}</span>}
+    //       </button>
+    //     </ul>
+    //   </div> {/* Close the div containing the header content */}
+    //   {/* The cart overlay */}
+    //   {btnCart && <CartShopping cart={cart}/>}
+    // </header>
   );
 }
