@@ -28,7 +28,7 @@ export function Header() {
 
   return (
     // The header element with some classes
-    <header className='w-screen bg-[#221f1f] fixed z-10 top-0 h-[50px]'>
+    <header> className='w-screen bg-[#221f1f] fixed z-10 top-0 h-[50px]'>
       {/* A container for the header with some classes */}
       <div className='container text-lg flex justify-between items-center text-white h-[50px] max-w-[1240px] m-auto px-2'>
         {/* The logo */}
