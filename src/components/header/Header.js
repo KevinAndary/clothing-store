@@ -40,6 +40,7 @@ export function Header() {
                 fontWeight: 'bold', // Make it bold
                 color: 'rgb(255, 68, 68)', // Choose your desired text color
                 textShadow: '2px 2px 4px rgba(0, 0, 0, 0.3)', // Add a subtle text shadow
+                fontFamily: 'Lobster, cursive'
             }}
         >
             UrbSty
