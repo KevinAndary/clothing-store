@@ -36,11 +36,19 @@ export function Header() {
         <span
             className="urbsty-text"
             style={{
-                fontSize: '24px', // Adjust the font size as needed
-                fontWeight: 'bold', // Make it bold
-                color: 'rgb(255, 68, 68)', // Choose your desired text color
-                textShadow: '2px 2px 4px rgba(0, 0, 0, 0.3)', // Add a subtle text shadow
+                fontSize: '24px',
+                fontWeight: 'bold',
                 fontFamily: 'Lobster, cursive',
+                background: 'linear-gradient(to right, #ff6b6b, #ffa86b)', // Colorful gradient background
+                WebkitBackgroundClip: 'text', // Clip text to background
+                color: 'transparent', // Hide text color
+                transition: '0.3s ease-in-out', // Smooth transition for hover effect
+            }}
+            onMouseOver={(e) => {
+                e.target.style.background = 'linear-gradient(to right, #ffa86b, #ff6b6b)'; // Change background on hover
+            }}
+            onMouseOut={(e) => {
+                e.target.style.background = 'linear-gradient(to right, #ff6b6b, #ffa86b)'; // Revert background on hover out
             }}
         >
             UrbSty
