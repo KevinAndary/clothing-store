@@ -36,10 +36,10 @@ export function Header() {
         <span
             className="urbsty-text"
             style={{
-                fontSize: '24px',
-                fontWeight: 'bold',
-                color: 'linear-gradient(to right, #ff6b6b, #ffa86b)',
-                textShadow: '2px 2px 4px rgba(0, 0, 0, 0.3)',
+                fontSize: '24px', // Adjust the font size as needed
+                fontWeight: 'bold', // Make it bold
+                color: 'rgb(255, 68, 68)', // Choose your desired text color
+                textShadow: '2px 2px 4px rgba(0, 0, 0, 0.3)', // Add a subtle text shadow
                 fontFamily: 'Lobster, cursive', // Specify the desired font family
             }}
         >
