@@ -32,9 +32,24 @@ export function Header() {
       {/* A container for the header with some classes */}
       <div className='container text-lg flex justify-between items-center text-white h-[50px] max-w-[1240px] m-auto px-2'>
         {/* The logo */}
-        <a href='/' >UrbSty</a>
-        {/* The search input */}
-        <Search />
+        <a href='/' className="logo">
+        <span
+            className="urbsty-text"
+            style={{
+                fontSize: '24px',
+                fontWeight: 'bold',
+                fontFamily: 'Lobster, cursive',
+                background: 'linear-gradient(to right, #ff6b6b, #ffa86b)', // Colorful gradient background
+                WebkitBackgroundClip: 'text', // Clip text to background
+                color: 'transparent', // Hide text color
+                transition: '0.3s ease-in-out', // Smooth transition for hover effect
+            }}
+        >
+            UrbSty
+        </span>
+    </a>
+    {/* The search input */}
+    <Search />
         {/* A list of buttons */}
         <ul className='flex justify-between'>
           {/* The search button */}
