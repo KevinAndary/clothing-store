@@ -32,10 +32,21 @@ export function Header() {
       {/* A container for the header with some classes */}
       <div className='container text-lg flex justify-between items-center text-white h-[50px] max-w-[1240px] m-auto px-2'>
         {/* The logo */}
-        <a href='/' >UrbStyyyyy</a>
-        
-        {/* The search input */}
-        <Search />
+        <a href='/' className="logo">
+        <span
+            className="urbsty-text"
+            style={{
+                fontSize: '24px', // Adjust the font size as needed
+                fontWeight: 'bold', // Make it bold
+                color: 'rgb(255, 68, 68)', // Choose your desired text color
+                textShadow: '2px 2px 4px rgba(0, 0, 0, 0.3)', // Add a subtle text shadow
+            }}
+        >
+            UrbSty
+        </span>
+    </a>
+    {/* The search input */}
+    <Search />
         
         {/* A list of buttons */}
         <ul className='flex justify-between'>
