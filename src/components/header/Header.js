@@ -32,21 +32,16 @@ export function Header() {
       {/* A container for the header with some classes */}
       <div className='container text-lg flex justify-between items-center text-white h-[50px] max-w-[1240px] m-auto px-2'>
         {/* The logo */}
-        <a href='/' className="logo">
+        <div className="header">
+    <a href='/' className="logo">
         <span
             className="urbsty-text"
             style={{
                 fontSize: '24px',
                 fontWeight: 'bold',
-                fontFamily: 'Lobster, cursive',     
-                WebkitBackgroundClip: 'text', // Clip text to background
-                color: 'transparent', // Hide text color
-            }}
-            onMouseOver={(e) => {
-                e.target.style.background = 'linear-gradient(to right, #ffa86b, #ff6b6b)'; // Change background on hover
-            }}
-            onMouseOut={(e) => {
-                e.target.style.background = 'linear-gradient(to right, #ff6b6b, #ffa86b)'; // Revert background on hover out
+                color: 'linear-gradient(to right, #ff6b6b, #ffa86b)',
+                textShadow: '2px 2px 4px rgba(0, 0, 0, 0.3)',
+                fontFamily: 'Lobster, cursive', // Specify the desired font family
             }}
         >
             UrbSty
@@ -54,6 +49,8 @@ export function Header() {
     </a>
     {/* The search input */}
     <Search />
+</div>
+
         
         {/* A list of buttons */}
         <ul className='flex justify-between'>
