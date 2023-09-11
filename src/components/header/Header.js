@@ -1,3 +1,11 @@
+import React from "react"; // Import React
+import { useSelector, useDispatch } from "react-redux"; // Import useSelector and useDispatch
+import { toggleBtnCart, toggleSearchForm } from "../../redux/products/products.slice"; // Import your Redux actions
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; // Import FontAwesomeIcon
+import { faCartShopping, faSearch, faUser } from '@fortawesome/free-solid-svg-icons'; // Import FontAwesome icons
+import { CartShopping } from "../cart-shopping/CartShopping"; // Import CartShopping component
+import { Search } from "../search/Search"; // Import Search component
+
 export function Header() {
   // Get the cart and btnCart state values from the Redux store
   const { cart, btnCart } = useSelector(state => state.product);
@@ -19,7 +27,7 @@ export function Header() {
   }
 
   return (
-    The header element with some classes
+    //The header element with some classes
     <header className='w-screen bg-[#221f1f] fixed z-10 top-0 h-[50px]'>
       {/* A container for the header with some classes */}
       <div className='container text-lg flex justify-between items-center text-white h-[50px] max-w-[1240px] m-auto px-2'>
