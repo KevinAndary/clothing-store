@@ -1,11 +1,3 @@
-import React from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { toggleBtnCart, toggleSearchForm } from "../../redux/products/products.slice";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCartShopping, faSearch, faUser } from '@fortawesome/free-solid-svg-icons';
-import { CartShopping } from "../cart-shopping/CartShopping";
-import { Search } from "../search/Search";
-
 export function Header() {
   // Get the cart and btnCart state values from the Redux store
   const { cart, btnCart } = useSelector(state => state.product);
@@ -28,16 +20,13 @@ export function Header() {
 
   return (
     // The header element with some classes
-    <header> className='w-screen bg-[#221f1f] fixed z-10 top-0 h-[50px]'>
+    <header className='w-screen bg-[#221f1f] fixed z-10 top-0 h-[50px]'>
       {/* A container for the header with some classes */}
       <div className='container text-lg flex justify-between items-center text-white h-[50px] max-w-[1240px] m-auto px-2'>
         {/* The logo */}
-         <a href='/' >UrbSty</a>
+        <a href='/' >UrbSty</a>
         {/* The search input */}
         <Search />
-</div>
-
-        
         {/* A list of buttons */}
         <ul className='flex justify-between'>
           {/* The search button */}
@@ -57,7 +46,7 @@ export function Header() {
             {cart.length > 0 && <span className='absolute right-[-7px] top-0 bg-[#00a046] text-[12px] h-[10px] flex items-center justify-center px-[7px] py-[10px] rounded-full'>{cart.length}</span>}
           </button>
         </ul>
-      </div>
+      </div> {/* Close the div containing the header content */}
       {/* The cart overlay */}
       {btnCart && <CartShopping cart={cart}/>}
     </header>
